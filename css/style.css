@@ -8,11 +8,11 @@ body
     color:white;
     margin: 0;
     padding: 0;
-    background-color: #0C0C0C;
+    background-color: black;
    
 }
 
-a.nav-link
+.nav-link
 {
     font-size: 1.2rem;
     color:white !important;
@@ -21,33 +21,61 @@ a.nav-link
 #mainNav
 {
     padding-right: 60px;
-    padding-top: 30px;
+    
+    
+}
+
+.main-nav
+{
     background: transparent !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all 0.8s ease-in-out;
+    
 }
 
 .home-page
 {
     height: 100vh;
     width: 100%;
-    background-color: #040a35;
+    background-color: linear-gradient(180deg, #000000 27.36%, rgba(0, 0, 0, 0) 133.38%), linear-gradient(180deg, #04002C 0%, #001C43 100%);
+    position: relative;
+}
+
+.mountain
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display:inline-block;
 }
 
 
-    .heading {
+#logo
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+.heading {
         max-width: 60%;
         text-align: center;
         position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -65%);
         top: 50%;
-    }
-
-
-.heading h1 {
-    letter-spacing: 1px;
-    font-size: 6.5em;
-    margin-bottom: 0.3em;
+        z-index: 1;
 }
+
+
+.heading h1
+{
+    letter-spacing: 1px;
+    font-size: 5em;
+    margin-bottom: 0.5em;
+}
+
 
 .event
 {
@@ -55,10 +83,11 @@ a.nav-link
     margin-bottom: 30px;
 }
 
-.event li {
+.event li
+{
     list-style: none;
     display: inline-block;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -74,20 +103,20 @@ a.nav-link
 
 .dev
 {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: blue;
     padding: 8px 32px 10px;
     font-size: 1.8em;
     /* border: none; */
     border-radius: 24px;
     border-color: white;
-    border-width: 2.6px;
+    border-width: 1.8px;
     font-weight: 400;
 }
 
 .about
 {
-    background-color: #0C0C0C;
+    background-color: #0b0d0f;
     width: 100%;
     max-height: 120vh;
 }
@@ -225,7 +254,7 @@ button.navbar-toggler
 .sponsorship
 {
     width:100%;
-    background-color: #0C0C0C;
+    background-color: black;
 }
 
 #female-pic
@@ -250,7 +279,7 @@ button.navbar-toggler
 #brochure img.line
 {
     max-width: 100%;
-    margin-top: -250px;
+    margin-top: -150px;
 }
 
 .brochure-box
@@ -376,10 +405,10 @@ button.navbar-toggler
 
 #lady p
 {
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
     font-size: 1.8em;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .commitment 
@@ -425,6 +454,11 @@ button.navbar-toggler
     {
         display: none;
     }
+
+    .col-md-7 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -456,6 +490,41 @@ button.navbar-toggler
         font-size: 1.6em;
         padding-top: 50px;
     }
+
+    #logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #time {
+        margin-left: 40px;
+    }
+
+    .event li {
+        list-style: none;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .event {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .dev {
+        background-color: transparent;
+        color: white;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-color: white;
+        border-width: 1.8px;
+        font-weight: 500;
+    }
+
+    
 }
 
 
@@ -465,6 +534,11 @@ button.navbar-toggler
         font-size: 1.2rem;
         max-width: 75%;
         margin-left: 12.5%;
+    }
+
+    #brochure
+    {
+        height: 85vh;
     }
 
 }
@@ -548,6 +622,16 @@ button.navbar-toggler
         text-decoration: underline;
     }
 
+    #brochure
+    {
+        height: 70vh;
+    }
+
+    #logo {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -610,6 +694,17 @@ button.navbar-toggler
     {
         font-size: 1.6em;
     }
+
+    #brochure
+    {
+        height: 60vh;
+    }
+
+    #logo {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -682,6 +777,16 @@ button.navbar-toggler
         z-index: 5;
     }
 
+    .container-fluid
+    {
+        margin-top: 20px;
+    }
+
+    #logo {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -714,6 +819,11 @@ button.navbar-toggler
 
     .link p {
         font-size: 1.8em;
+    }
+
+    #brochure
+    {
+        height: 50vh;
     }
 }
 
@@ -783,6 +893,15 @@ button.navbar-toggler
         font-size: 1.4em;
     }
 
+    #brochure
+    {
+        height: 40vh;
+    }
+
+    #logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -933,8 +1052,12 @@ button.navbar-toggler
         height: 180px;
         transform: translate(0%, -115%);
     }
+    #brochure
+    {
+        height: 30vh;
+    }
 }
-}
+
 
 @media screen and (max-width: 500px)
 {
@@ -963,8 +1086,6 @@ button.navbar-toggler
         height: 200px;
         transform: translate(0%, -105%);
     }
-
-   
 }
 
 @media screen and (max-width: 440px)
@@ -1024,7 +1145,7 @@ button.navbar-toggler
     transform: translate(0%, -80%);
     z-index: 5;
     text-align: center;
-}
+    }
 
     #content {
         position: relative;
@@ -1073,8 +1194,6 @@ button.navbar-toggler
         margin-top: -150px;
     }
 
-  
-
     #lady {
         text-align: center;
         margin-top: 80px;
@@ -1088,20 +1207,39 @@ button.navbar-toggler
         margin-top: 60px;
     }
 
-    .event {
-        padding: 0;
-        margin-bottom: 24px;
+    .faq {
+        background: #4D54EB;
+        padding-top: 80px;
+        margin-top: -4px;
     }
 
-    .event li
-    {
-        font-size: 1.4em;
+    .bottom-curve img {
+        width: 100%;
+        margin-top: -2px;
     }
 
-    .dev
-    {
-        font-size: 1.3em;
+    .later p {
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1.6em;
+        padding-top: 50px;
+        margin-bottom: 20px;
     }
+
+    .up-curve img {
+        width: 100%;
+        margin-bottom: -0px;
+    }
+
+    .nav-link {
+        font-size: 1.1em;
+    }
+    
+    #brochure
+    {
+        height: 15vh;
+    }
+
 }
 
 #com-content div p a
@@ -1109,3 +1247,61 @@ button.navbar-toggler
     color: #ffffff;
 }
 
+.white
+{
+    background-color: white !important;
+    opacity: 0.92;
+    
+}
+
+.black
+{
+    color: black !important;
+}
+
+.top
+{
+    margin-top: 7%;
+}
+
+.btn-top
+{
+    margin-top: -15px;
+}
+
+.shadowFix {
+    box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+
+}
+
+.yellow
+{
+    color:yellow;
+}
+
+@media screen and (min-width: 992px)
+{
+
+    .c25
+    {
+        padding-top: 3%;
+        padding-bottom: 2%;
+        transition: all 0.8s ease;
+    }
+
+    .c23
+    {
+        background: #000000 !important;
+    }
+
+    .shadowFix {
+        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+
+    }
+
+    #mainNav
+    {
+        overflow: hidden;
+    }
+    
+}
