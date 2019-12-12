@@ -347,25 +347,30 @@ button.navbar-toggler
     display: inline-block;
 }
 
-.dot img
+.ribbon
 {
     position: relative;
-    top: 79%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    text-align: center;
-    float: right;
 }
 
-.ribbon img
+.ribbon img {
+    position: absolute;
+    top: -28px;
+    left: -50px;
+    height: 110%;
+}
+
+.dot
 {
     position: relative;
-    top: 46%;
-    left: 50%;
-    transform: translate(-53%, -50%);
+}
+
+.dot img
+{
+    position: absolute;
+   bottom:20px;
+   right: 20px;
+    width: 50%;
     text-align: center;
-    height: 50%;
 }
 
 .up-curve img
@@ -604,12 +609,6 @@ button.navbar-toggler
         z-index: 5;
     }
 
-    .ribbon img
-    {
-        transform: translate(-47%, -50%);
-        max-width: 172%;
-    }
-
     .link p
     {
         font-size: 2.4em;
@@ -683,6 +682,13 @@ button.navbar-toggler
         height: 250px;
         transform: translate(0%, -162%);
         z-index: 5;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -23px;
+        left: -44px;
+        height: 110%;
     }
 
     .link p
@@ -893,14 +899,17 @@ button.navbar-toggler
         font-size: 1.4em;
     }
 
-    #brochure
-    {
-        height: 40vh;
-    }
 
     #logo {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -23px;
+        left: -38px;
+        height: 110%;
     }
 
 }
@@ -964,17 +973,24 @@ button.navbar-toggler
 
     .link p
     {
-        font-size: 1.4em;
+        font-size: 1.25em;
     }
 
     .link a
     {
-        font-size: 1.2em;
+        font-size: 1.15em;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 0.8em;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -20px;
+        left: -36px;
+        height: 110%;
     }
 }
 
@@ -1052,9 +1068,10 @@ button.navbar-toggler
         height: 180px;
         transform: translate(0%, -115%);
     }
+
     #brochure
     {
-        height: 30vh;
+        height: 40vh;
     }
 }
 
@@ -1180,13 +1197,13 @@ button.navbar-toggler
     }
 
     .link a {
-        font-size: 0.9em;
+        font-size: 0.8em;
         color: white;
         text-decoration: underline;
     }
 
     .link p {
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
 
     #brochure img.line {
@@ -1238,6 +1255,21 @@ button.navbar-toggler
     #brochure
     {
         height: 15vh;
+    }
+
+    .dot img {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 60%;
+        text-align: center;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -9px;
+        left: -17px;
+        height: 110%;
     }
 
 }
