@@ -1365,7 +1365,7 @@ button.navbar-toggler
     #com-line {
         position: absolute;
         top: 0px;
-        right: 10px;
+        right: 20px;
         height: 8%;
     }
 
@@ -1375,7 +1375,7 @@ button.navbar-toggler
     }
 
     #com-content div p {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     #com-content div h1 {
