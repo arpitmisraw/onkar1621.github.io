@@ -64,9 +64,9 @@ button{
     -webkit-appearance: none;
 } 
 
-.collapsible:before{
+/* .collapsible:before{
     padding-right: 10%;
-}
+} */
 
 .faq-collapsible{
     border-bottom: 2px solid white;
@@ -113,16 +113,17 @@ a, a:hover, a:after, a:visited, a:active{
     }
 }
 
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+.collapsible:before {
+    margin-top: 5px;
+    content: '\02795';
     font-size: 13px;
     color: #715EFF;
-    float: right;
-    margin-left: 5px;
+    float: left;
+    margin-left: 0px;
     outline: 0;
 }
 
-.active:after {
+.active:before {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
     color: #ffd405;
 }
@@ -1755,9 +1756,13 @@ background-color: #555;
     color: transparent;
 }
 
-.shadowFix {
-    box-shadow:  0 6px 18px 0 rgba(46,61,73,0.1);
-}
 
+@media screen and (min-width: 992px)
+{
+    .shadowFix {
+        box-shadow:  0 6px 18px 0 rgba(46,61,73,0.1);
+    }
+    
+}
 
 /*--------- Projects Section ends  -----------*/
