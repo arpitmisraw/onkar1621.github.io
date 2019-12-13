@@ -1458,6 +1458,11 @@ button.navbar-toggler
         padding-right: 4%;
     }
 
+    .active:before {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+        color: #ffd405;
+    }
+
 }
 
 #com-content div p a
