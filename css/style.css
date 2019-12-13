@@ -20,7 +20,7 @@ body
 
 .nav-link
 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color:white !important;
     font-family: 'CeraPro';
 }
@@ -1578,15 +1578,19 @@ button.navbar-toggler
     width: 30%;
 }
 
+
+
 .hint{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    margin-bottom: 15px;
 }
 
 .landing-college-name-row{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 500;
+    font-family: 'CeraPro';
 }
 
 
@@ -1663,7 +1667,11 @@ button.navbar-toggler
     }
   } */
 
-
+  .footer {
+    background: #262626;
+    color: white;
+    font-family: 'CeraPro';
+}
 
 .footer-row{
     width: 35%;
@@ -1677,17 +1685,20 @@ button.navbar-toggler
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
+    font-family: 'CeraPro';
 }
 
 .footer-info{
     font-size: 20px;
     color: #575757;
     line-height: 140%;
+    font-family: 'CeraPro';
 }
 
 .footer-social-links{
     font-size: 20px;
     color: #818181;
+    font-family: 'CeraPro';
 }
 
 .footer-logo-img{
@@ -1735,10 +1746,7 @@ button.navbar-toggler
     }
 }
 
-.footer {
-    background: #262626;
-    color: white;
-}
+
 
 
 .sponsor-image{
