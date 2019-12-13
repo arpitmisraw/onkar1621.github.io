@@ -57,7 +57,7 @@
               <div class="home-page" style="overflow: hidden;">
                 <div class="heading">
                   <div class="container">
-                    <div class="stars"> 
+                    <div class="stars" style="z-index: 0;"> 
                       <div class="star"></div>
                       <div class="star"></div>
                       <div class="star"></div>
@@ -160,16 +160,16 @@
                       <div class="star"></div>
                     </div>
                   </div>
-                  <div class="hint">
+                  <div class="hint" style="z-index: 4;">
                     <img src="images/Landing/logo_coloured_white_text.svg" alt="" id="logo">
                   </div>
-                  <div class="list">
+                  <div class="list" style="z-index: 4;">
                     <ul class="event">
                       <li class="schedule" id="venue"><i class="fas fa-map-marker-alt"></i>IIIT Allahabad</li>
                       <li class="schedule" id="time"><i class="fas fa-calendar-alt"></i>27th-29th March</li>
                     </ul>
                   </div>
-                  <div id="devfolio">
+                  <div id="devfolio" style="z-index: 4;">
                     <button class="dev">Apply with Devfolio</button>
                   </div>
                   
@@ -177,9 +177,9 @@
 
                
                 
-                <img src="images/Landing/back.svg" alt="" class="mountain" id="back">
-                <img src="images/Landing/mid.svg" alt="" class="mountain" id="mid">
-                <img src="images/Landing/front.svg" alt="" class="mountain" id="front">
+                <img src="images/Landing/back.svg" alt="" class="mountain" id="back" style="z-index: 1;">
+                <img src="images/Landing/mid.svg" alt="" class="mountain" id="mid" style="z-index: 2;">
+                <img src="images/Landing/front.svg" alt="" class="mountain" id="front" style="z-index: 3;">
                 
               </div>
 
@@ -387,6 +387,32 @@
               <div id="sponsors">
 
               </div>
+
+              <script>
+                var landing = document.querySelector('.landing');
+                var halfWindowWidth = Math.ceil(window.innerWidth / 2);
+                var m1 = document.querySelector('#front');
+                var m2 = document.querySelector('#mid');
+                var m3 = document.querySelector('#back');
+                window.addEventListener("mousemove", (e) => {
+                    var xPositionFromCenter = e.offsetX - halfWindowWidth;
+                    var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
+                    var degreeChange2 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    var degreeChange3 = Math.floor(xPositionFromCenter * 5 / halfWindowWidth);
+                    m1.style.marginLeft = degreeChange1 + 'px';
+                    m2.style.marginLeft = degreeChange2 + 'px';
+                    m3.style.marginLeft = degreeChange3 + 'px';
+                });
+        
+                document.addEventListener("scroll", () => {
+                    var yPositionOfScroll = window.scrollY;
+                    var totalHeight = window.innerHeight;
+                    var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
+                    var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
+                    m2.style.marginBottom = -degreeChange2 + 'px';
+                    m3.style.marginBottom = -degreeChange3 + 'px';
+                });
+              </script>
               
               <script>
                 $(".navbar-toggler").click(function(){

@@ -44,10 +44,17 @@ body
 
 .mountain
 {
-    width: 100%;
+    width: 110%;
     position: absolute;
+    left: 50%;
     bottom: 0;
+    transform: translate(-50%, 0);
     display:inline-block;
+    opacity: 1;
+}
+
+#front, #mid, #back{
+    transition: margin-left 1s ease;
 }
 
 
