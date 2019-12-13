@@ -448,9 +448,8 @@ button.navbar-toggler
     text-align: center;
 }
 
-.up-curve img
-{
-    width: 100%;
+.up-curve img {
+    width: 102%;
     margin-bottom: -15px;
 }
 
@@ -499,6 +498,10 @@ button.navbar-toggler
 {
     width: 70%;
     margin: 0 auto; 
+}
+
+.collapsible:before{
+    padding-right: 4%;
 }
 
 #lady p
@@ -1395,6 +1398,8 @@ button.navbar-toggler
 
     .col-md-7 {
         margin-top: 70px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .faq {
@@ -1417,8 +1422,8 @@ button.navbar-toggler
     }
 
     .up-curve img {
-        width: 100%;
-        margin-bottom: -0px;
+        width: 101%;
+        margin-bottom: 0px;
     }
 
     .nav-link {
@@ -1498,6 +1503,25 @@ button.navbar-toggler
         height: 45%;
     }
 
+    .collapsible:before {
+         margin-top: 0px;
+        content: '\02795';
+        font-size: 13px;
+        color: #715EFF;
+        float: left;
+        margin-left: 0px;
+        outline: 0;
+    }
+
+    .collapsible:before{
+        padding-right: 4%;
+    }
+
+    .active:before {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+        color: #ffd405;
+    }
+
 }
 
 #com-content div p a
@@ -1518,7 +1542,7 @@ button.navbar-toggler
 }
 
 .top
-{FAQ
+{
     margin-top: 7%;
 }
 
@@ -1527,10 +1551,6 @@ button.navbar-toggler
     margin-top: -15px;
 }
 
-.shadowFix {
-    box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
-
-}
 
 .yellow
 {
@@ -1561,6 +1581,12 @@ button.navbar-toggler
     {
         overflow: hidden;
     }
+
+    .shadowFix {
+        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+    
+    }
+    
     
 }
 
@@ -1573,7 +1599,7 @@ button.navbar-toggler
 .main-landing-text{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
     width: 30%;
 }
@@ -1859,3 +1885,40 @@ button.navbar-toggler
         font-size: 12px;
     }
 }
+  @media screen and (min-width: 440px) and (max-width: 737px) and (orientation: landscape)
+  {
+    #content div h1 {
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    #content div p {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    #content div p {
+        font-size: 1.2em;
+    }
+
+    #com-content div h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    #com-content div p {
+        font-size: 1.2em;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -87%);
+    }
+
+    #brochure {
+        height: 70vh;
+    }
+  }
+
