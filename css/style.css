@@ -527,6 +527,12 @@ button.navbar-toggler
         margin-top: 60px;
         margin-bottom: 100px;
     }
+
+    #faq-sec
+    {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 
