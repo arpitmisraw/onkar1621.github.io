@@ -57,7 +57,7 @@
               <div class="home-page" style="overflow: hidden;">
                 <div class="heading">
                   <div class="container">
-                    <div class="stars"> 
+                    <div class="stars" style="z-index: 0;"> 
                       <div class="star"></div>
                       <div class="star"></div>
                       <div class="star"></div>
@@ -160,31 +160,68 @@
                       <div class="star"></div>
                     </div>
                   </div>
-                  <div class="hint">
-                    <img src="images/Landing/logo_coloured_white_text.svg" alt="" id="logo">
-                  </div>
-                  <div class="list">
-                    <ul class="event">
-                      <li class="schedule" id="venue"><i class="fas fa-map-marker-alt"></i>IIIT Allahabad</li>
-                      <li class="schedule" id="time"><i class="fas fa-calendar-alt"></i>27th-29th March</li>
-                    </ul>
-                  </div>
-                  <div id="devfolio">
-                    <button class="dev">Apply with Devfolio</button>
-                  </div>
                   
+                  
+                </div>
+
+                <div class="main-landing-text" style="z-index: 3;">
+                    <div class="hint" style="z-index: 4;">
+                        <img src="images/Landing/logo_coloured_white_text.svg" alt="" id="logo">
+                      </div>
+                      <div class="list" style="z-index: 4; margin-bottom: 20px;">
+                        <div class="container-fluid">
+                          <div class="row landing-college-name-row text-center">
+                            <div class="col-6">
+                              <i class="fas fa-map-marker-alt"></i> IIIT Allahabad
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-calendar-alt"></i> 27th-29th March
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <ul class="event">
+                          <li class="schedule" id="venue"><i class="fas fa-map-marker-alt"></i>IIIT Allahabad</li>
+                          <li class="schedule" id="time"><i class="fas fa-calendar-alt"></i>27th-29th March</li>
+                        </ul> -->
+                      </div>
+                      <div id="devfolio" style="z-index: 4;">
+                        <button class="dev" style="position: relative; left: 50%; transform: translate(-50%, 0);">Apply with Devfolio</button>
+                      </div>
                 </div>
 
                
                 
-                <img src="images/Landing/back.svg" alt="" class="mountain" id="back">
-                <img src="images/Landing/mid.svg" alt="" class="mountain" id="mid">
-                <img src="images/Landing/front.svg" alt="" class="mountain" id="front">
+                <img src="images/Landing/back.svg" alt="" class="mountain" id="back" style="z-index: 1;">
+                <img src="images/Landing/mid.svg" alt="" class="mountain" id="mid" style="z-index: 2;">
+                <img src="images/Landing/front.svg" alt="" class="mountain" id="front" style="z-index: 4;">
                 
               </div>
 
               <div class="about" id="about">
-                  <img src="images/what is/dotted_white_line.svg" alt="" id="dot-line"> 
+                  <div id="test" style="position: absolute;top: 100px">
+                      <svg class="dot-line" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                      <path class="path" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" d="M0 1
+                              C20.5 80.5 18.5 161 205 226
+                              
+                              C336 274.5 396.356 169.5 359.5 116
+                              C326.089 67.5 205 74.4 205 226
+                              
+                              C208.667 288.333 251.7 408.2 394.5 389"/>
+                      
+                      <path class="dashed" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M0 1
+                              C20.5 80.5 18.5 161 205 226
+                              
+                              C336 274.5 396.356 169.5 359.5 116
+                              C326.089 67.5 205 74.4 205 226
+                              
+                              C208.667 288.333 251.7 408.2 394.5 389"/>
+                      </svg>
+                      
+                      <div class="ball"></div>
+                       
+                      </div>
+                  <!-- <img src="images/what is/dotted_white_line.svg" alt="" id="dot-line">  -->
                   <img src="images/what is/dark_triangle.svg" alt="" id="tri-dark">
                 <!-- <div class="row" id="shapes">
                   <div id="line" class="col-sm-6"><img src="images/what is/dotted_white_line.svg" alt="line"></div>
@@ -387,6 +424,73 @@
               <div id="sponsors">
 
               </div>
+
+              <script>
+                var path = document.querySelector('.path');
+                var ball = document.querySelector('.ball');
+                var test = document.querySelector('.test');
+                var pathLength = path.getTotalLength();
+
+                console.log(path.getTotalLength());
+                path.style.strokeDasharray = pathLength + ' ' + pathLength;
+                path.style.strokeDashoffset = pathLength;
+                // ball.offsetDistance = 1;
+
+                // When the page scrolls...
+                window.addEventListener("scroll", function(e) {
+                
+                  // What % down is it? 
+                  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+                  // console.log(scrollPercentage);
+                  var yPositionOfScroll = window.scrollY;
+                  var totalHeight = window.innerHeight;
+                  var scrollPercentage = yPositionOfScroll * 0.75 / totalHeight;
+                  console.log(scrollPercentage, scrollPercentage);
+                  var easer = scrollPercentage * scrollPercentage;
+                    
+                  // Length to offset the dashes
+                  var drawLength = pathLength * easer;
+                  var offPerc = 100 * easer + '%';
+                  
+                  // Draw in reverse
+                  path.style.strokeDashoffset = pathLength - drawLength;
+                  
+                  $(".ball").css("offset-distance", offPerc);
+                  
+                    if (scrollPercentage >= 0.99) {
+                    path.style.strokeDasharray = "none";
+                  } else {
+                    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+                  }
+                  
+                });
+              </script>
+
+              <script>
+                var landing = document.querySelector('.landing');
+                var halfWindowWidth = Math.ceil(window.innerWidth / 2);
+                var m1 = document.querySelector('#front');
+                var m2 = document.querySelector('#mid');
+                var m3 = document.querySelector('#back');
+                window.addEventListener("mousemove", (e) => {
+                    var xPositionFromCenter = e.offsetX - halfWindowWidth;
+                    var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
+                    var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
+                    var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    m1.style.marginLeft = -degreeChange1 + 'px';
+                    m2.style.marginLeft = degreeChange2 + 'px';
+                    m3.style.marginLeft = degreeChange3 + 'px';
+                });
+        
+                document.addEventListener("scroll", () => {
+                    var yPositionOfScroll = window.scrollY;
+                    var totalHeight = window.innerHeight;
+                    var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
+                    var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
+                    m2.style.marginBottom = -degreeChange2 + 'px';
+                    m3.style.marginBottom = -degreeChange3 + 'px';
+                });
+              </script>
               
               <script>
                 $(".navbar-toggler").click(function(){

@@ -44,16 +44,26 @@ body
 
 .mountain
 {
-    width: 100%;
+    width: 110%;
     position: absolute;
+    left: 50%;
     bottom: 0;
+    transform: translate(-50%, 0);
     display:inline-block;
+    opacity: 1;
+}
+
+#front, #mid, #back{
+    transition: margin-left 1s ease;
 }
 
 
 #logo
 {
-    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -79,7 +89,8 @@ body
 
 .event
 {
-    padding: 0;
+    padding: ;
+    margin: auto;
     margin-bottom: 30px;
 }
 
@@ -128,6 +139,8 @@ body
     left: 0;
     height: 33%;
 }
+
+
 
 #tri-dark {
     position: absolute;
@@ -1497,3 +1510,80 @@ button.navbar-toggler
     height: 100vh;
     position: relative;
 }
+
+.main-landing-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.hint{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.landing-college-name-row{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+.dot-line {
+    width: 612px;
+    height: 792px;
+    display: block;
+    position: absolute;
+    opacity: 0.3;  
+  }
+
+  
+
+  
+  .dashed{
+    stroke-dasharray: 5;
+  }
+  /* .path {
+    stroke-dasharray: 1114.6513671875;
+    stroke-dashoffset: 1114.6513671875;
+    animation: dash 5s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1114.6513671875;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  } */
+  
+  .ball {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    opacity: 0.5;
+    
+    offset-path: path('M0 1\
+          C20.5 80.5 18.5 161 205 226\
+          M205 226\
+          C336 274.5 396.356 169.5 359.5 116\
+          C326.089 67.5 205 74.4 205 226\
+          ZM205 226\
+          C208.667 288.333 251.7 408.2 394.5 389');
+  /*   offset-distance: 0%; */
+  
+  /*   animation: red-ball 5s linear alternate infinite; */
+  }
+  
+  /* @keyframes red-ball {
+    from {
+      offset-distance: 0%;
+    }
+    to {
+      offset-distance: 100%;
+    }
+  } */
