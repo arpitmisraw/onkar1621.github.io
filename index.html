@@ -682,38 +682,34 @@
                 });
               </script>
 
-              <!-- <script>
+              <script>
                 var landing = document.querySelector('.landing');
                 var halfWindowWidth = Math.ceil(window.innerWidth / 2);
                 var m1 = document.querySelector('#front');
                 var m2 = document.querySelector('#mid');
                 var m3 = document.querySelector('#back');
-                window.addEventListener("mousemove", (e) => {
+                if(window.innerWidth > 992){
+                  window.addEventListener("mousemove", (e) => {
                     var xPositionFromCenter = e.offsetX - halfWindowWidth;
-                    if(window.innerWidth > 1000){
-                      var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
-                      var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
-                      var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
-                      m1.style.marginLeft = -degreeChange1 + 'px';
-                      m2.style.marginLeft = degreeChange2 + 'px';
-                      m3.style.marginLeft = degreeChange3 + 'px';
-                    }
-                    else{
-                      m1.style.marginLeft = '0px';
-                      m2.style.marginLeft = '0px';
-                      m3.style.marginLeft = '0px';
-                    }
-                });
-        
-                document.addEventListener("scroll", () => {
-                    var yPositionOfScroll = window.scrollY;
-                    var totalHeight = window.innerHeight;
-                    var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
-                    var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
-                    m2.style.marginBottom = -degreeChange2 + 'px';
-                    m3.style.marginBottom = -degreeChange3 + 'px';
-                });
-              </script> -->
+                    var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
+                    var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
+                    var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    m1.style.marginLeft = -degreeChange1 + 'px';
+                    m2.style.marginLeft = degreeChange2 + 'px';
+                    m3.style.marginLeft = degreeChange3 + 'px';
+                  });
+          
+                  document.addEventListener("scroll", () => {
+                      var yPositionOfScroll = window.scrollY;
+                      var totalHeight = window.innerHeight;
+                      var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
+                      var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
+                      m2.style.marginBottom = -degreeChange2 + 'px';
+                      m3.style.marginBottom = -degreeChange3 + 'px';
+                  });
+                }
+                
+              </script>
               
               <script>
                 $(".navbar-toggler").click(function(){
