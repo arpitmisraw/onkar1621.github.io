@@ -12,10 +12,17 @@ body
    
 }
 
+@font-face{
+    font-family: 'CeraPro';
+    src: url('../fonts/cera pro sv/Cera\ Pro\ Medium.otf') format('opentype');
+}
+
+
 .nav-link
 {
     font-size: 1.2rem;
     color:white !important;
+    font-family: 'CeraPro';
 }
 
 #mainNav
@@ -32,6 +39,10 @@ body
     padding-bottom: 1%;
     transition: all 0.8s ease-in-out;
     
+}
+
+.nav-item{
+
 }
 
 .home-page
