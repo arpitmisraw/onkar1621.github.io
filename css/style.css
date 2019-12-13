@@ -1611,3 +1611,41 @@ button.navbar-toggler
       offset-distance: 100%;
     }
   } */
+
+  @media screen and (min-width: 440px) and (max-width: 737px) and (orientation: landscape)
+  {
+    #content div h1 {
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    #content div p {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    #content div p {
+        font-size: 1.2em;
+    }
+
+    #com-content div h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    #com-content div p {
+        font-size: 1.2em;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -87%);
+    }
+
+    #brochure {
+        height: 70vh;
+    }
+  }
+
