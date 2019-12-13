@@ -11,7 +11,10 @@
 </defs>
 
 <style type="text/css">
-	.st0{font-family:'CircularStdBold';}
+	.st0{
+		font-family:'CircularStdBold';
+		src: url('../fonts/CircularStdBold/CircularStdBold.woff');
+	}
 	.st1{font-size:132px;}
 	.st2{clip-path:url(#XMLID_54_);}
 	.st3{fill:#F79737;}
@@ -64,4 +67,5 @@
 		</g>
 	</g>
 </g>
+
 </svg>

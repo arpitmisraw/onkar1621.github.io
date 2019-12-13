@@ -201,10 +201,11 @@
               </div>
 
               <div class="about" id="about">
-                  <div id="test" style="position: absolute;top: 100px">
+                  <div id="test" style="width:30vw">
                       <svg class="dot-line" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-                      <path class="path" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" d="M0 1
+                      <path class="path" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" 
+                            d="M0 0
                               C20.5 80.5 18.5 161 205 226
                               
                               C336 274.5 396.356 169.5 359.5 116
@@ -212,18 +213,22 @@
                               
                               C208.667 288.333 251.7 408.2 394.5 389"/>
                       
-                      <path class="dashed" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M0 1
+                      <path class="dashed" fill="none" stroke="#0c0c0c" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" 
+                            d="M0 0
                               C20.5 80.5 18.5 161 205 226
                               
                               C336 274.5 396.356 169.5 359.5 116
                               C326.089 67.5 205 74.4 205 226
                               
                               C208.667 288.333 251.7 408.2 394.5 389"/>
+                              
                       </svg>
-                      
-                      <div class="ball"></div>
+                        <div class="ball"></div>
+
+
+
                        
-                      </div>
+                    </div>
                   <!-- <img src="images/what is/dotted_white_line.svg" alt="" id="dot-line">  -->
                   <img src="images/what is/dark_triangle.svg" alt="" id="tri-dark">
                 <!-- <div class="row" id="shapes">
@@ -433,6 +438,7 @@
                 var ball = document.querySelector('.ball');
                 var test = document.querySelector('.test');
                 var pathLength = path.getTotalLength();
+                console.log("path len:" + pathLength);
 
                 console.log(path.getTotalLength());
                 path.style.strokeDasharray = pathLength + ' ' + pathLength;
@@ -449,7 +455,15 @@
                   var totalHeight = window.innerHeight;
                   var scrollPercentage = yPositionOfScroll * 0.75 / totalHeight;
                   console.log(scrollPercentage, scrollPercentage);
-                  var easer = scrollPercentage * scrollPercentage;
+
+                  var lock_scroll = 0;
+                  if (scrollPercentage >= 1.0) {
+                    lock_scroll = 1.0;
+                  } else {
+                    lock_scroll = scrollPercentage;
+                  }
+
+                  var easer = lock_scroll * lock_scroll * (3 - 2 * lock_scroll);
                     
                   // Length to offset the dashes
                   var drawLength = pathLength * easer;
@@ -461,7 +475,7 @@
                   $(".ball").css("offset-distance", offPerc);
                   
                     if (scrollPercentage >= 0.99) {
-                    path.style.strokeDasharray = "none";
+                      scrollPercentage  = 0.99;
                   } else {
                     path.style.strokeDasharray = pathLength + ' ' + pathLength;
                   }
