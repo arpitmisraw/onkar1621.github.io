@@ -415,9 +415,8 @@ button.navbar-toggler
     text-align: center;
 }
 
-.up-curve img
-{
-    width: 100%;
+.up-curve img {
+    width: 102%;
     margin-bottom: -15px;
 }
 
@@ -466,6 +465,10 @@ button.navbar-toggler
 {
     width: 70%;
     margin: 0 auto; 
+}
+
+.collapsible:before{
+    padding-right: 4%;
 }
 
 #lady p
@@ -1336,6 +1339,8 @@ button.navbar-toggler
 
     .col-md-7 {
         margin-top: 70px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .faq {
@@ -1358,8 +1363,8 @@ button.navbar-toggler
     }
 
     .up-curve img {
-        width: 100%;
-        margin-bottom: -0px;
+        width: 101%;
+        margin-bottom: 0px;
     }
 
     .nav-link {
@@ -1437,6 +1442,20 @@ button.navbar-toggler
         top: 37%;
         right: 18%;
         height: 45%;
+    }
+
+    .collapsible:before {
+         margin-top: 0px;
+        content: '\02795';
+        font-size: 13px;
+        color: #715EFF;
+        float: left;
+        margin-left: 0px;
+        outline: 0;
+    }
+
+    .collapsible:before{
+        padding-right: 4%;
     }
 
 }
