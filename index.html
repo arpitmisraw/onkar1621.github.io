@@ -298,6 +298,12 @@
                                 <i class="fas fa-calendar-alt"></i> 27th-29th March
                             </div>
                           </div>
+                          <br>
+                          <div class="row text-center">
+                            <div class="col-12" id="devfolio" style="z-index: 5">
+                              <button class="dev" id="devfolio-apply-now" onClick=”_gaq.push([‘_trackEvent’, ‘External Link’, ‘Devfolio Link’, ‘Registration’]);”>Apply with Devfolio</button>
+                            </div>
+                          </div>
                         </div>
                         <!-- <ul class="event">
                           <li class="schedule" id="venue"><i class="fas fa-map-marker-alt"></i>IIIT Allahabad</li>
@@ -770,7 +776,29 @@
                 }
 
               </script>
-                            
+
+              <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function () {
+                  let devfolioOptions = {
+                      buttonSelector: '#devfolio-apply-now',
+                      key: 'hint5',
+                  }
+
+                  let script = document.createElement('script');
+                  script.src = "https://apply.devfolio.co";
+                  document.head.append(script);
+
+                  script.onload = function () {
+                      new Devfolio(devfolioOptions);
+                  }
+
+                  script.onerror = function () {
+                      document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+                          window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+                      });
+                  }
+              });
+              </script>                      
               
               
             </body>
