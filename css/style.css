@@ -53,14 +53,17 @@ body
     opacity: 1;
 }
 
-/* #front, #mid, #back{
+#front, #mid, #back{
     transition: margin-left 1s ease;
-} */
+}
 
 
 #logo
 {
-    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -86,7 +89,8 @@ body
 
 .event
 {
-    padding: 0;
+    padding: ;
+    margin: auto;
     margin-bottom: 30px;
 }
 
@@ -1507,17 +1511,39 @@ button.navbar-toggler
     position: relative;
 }
 
+.main-landing-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.hint{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.landing-college-name-row{
+    font-size: 2em;
+    font-weight: 500;
+}
+
 
 .dot-line {
     width: 612px;
     height: 792px;
     display: block;
     position: absolute;
+    opacity: 0.3;  
   }
+
+  
+
   
   .dashed{
     stroke-dasharray: 5;
-  
   }
   /* .path {
     stroke-dasharray: 1114.6513671875;
@@ -1537,8 +1563,9 @@ button.navbar-toggler
   .ball {
     width: 10px;
     height: 10px;
-    background-color: red;
+    background-color: orange;
     border-radius: 50%;
+    opacity: 0.5;
     
     offset-path: path('M0 1\
           C20.5 80.5 18.5 161 205 226\
