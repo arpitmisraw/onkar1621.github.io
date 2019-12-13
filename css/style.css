@@ -538,6 +538,10 @@ button.navbar-toggler
         margin-left: 12.5%;
     } */
 
+    .sponsor-section {  
+        padding-top: 15%;
+    }
+
     #brochure
     {
         height: 85vh;
@@ -578,6 +582,10 @@ button.navbar-toggler
         transform: translate(-50%, -105%);
         width: 100%;
     } */
+
+    .sponsor-section {  
+        padding-top: 18%;
+    }
 
     #content div
     {
@@ -728,6 +736,10 @@ button.navbar-toggler
         height: 27%;
     }
 
+    .sponsor-section {  
+        padding-top: 20%;
+    }
+
     /* #content {
         position: relative;
         top: 0%;
@@ -827,6 +839,10 @@ button.navbar-toggler
         z-index: 5;
         text-align: center;
     } */
+
+    .sponsor-section {  
+        padding-top: 30%;
+    }
 
     #female-pic img {
         max-width: 100%;
@@ -952,6 +968,11 @@ button.navbar-toggler
 
 @media screen and (max-width: 768px)
 {
+
+    .sponsor-section {  
+        padding-top: 40%;
+    }
+
     .bandi
     {
         width: 50%;
@@ -1119,6 +1140,11 @@ button.navbar-toggler
 
 @media screen and (max-width: 575px)
 {
+
+    .sponsor-section {  
+        padding-top: 45%;
+    }
+
     #female-pic img {
         max-width: 100%;
         position: relative;
@@ -1460,7 +1486,7 @@ button.navbar-toggler
 }
 
 .top
-{
+{FAQ
     margin-top: 7%;
 }
 
@@ -1606,3 +1632,190 @@ button.navbar-toggler
   } */
 
 
+
+.footer-row{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.footer-title{
+    background: linear-gradient(to right, #6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+}
+
+.footer-info{
+    font-size: 20px;
+    color: #575757;
+    line-height: 140%;
+}
+
+.footer-social-links{
+    font-size: 20px;
+    color: #818181;
+}
+
+.footer-logo-img{
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .footer-row{
+        width: 50%;
+    }
+
+    .footer-info, .footer-social-links{
+        font-size: 16px;
+    }
+
+    .footer-logo-img{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .footer{
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+
+    .footer-row{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .footer-title{
+        font-size: 18px;
+    }
+
+    .footer-info, .footer-social-links{
+        font-size: 14px;
+    }
+
+    .footer-logo-img{
+        width: 50%;
+    }
+}
+
+.footer {
+    background: #262626;
+    color: white;
+}
+
+
+.sponsor-image{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-sponsor-image{
+  width: 75%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.associate-sponsor-image{
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.platform-sponsor-image{
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sponsors{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.image-column{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    /* margin: auto; */
+    display: block;
+}
+
+.sponsor-title{
+    font-family: circularStd;
+    color: #575757;
+    font-size: 45px;
+}
+
+.patron-title{
+  padding-top: 10%;
+  font-family: circularStd;
+  color: #575757;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 992px){
+    .main-sponsors{
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .sponsor-title, .patron-title {
+        font-size: 30px;
+    }
+
+    .sponsor-us-row{
+        font-size: 18px;
+    }
+
+    .platform-sponsor-image {
+      width: 50%;
+    }
+
+    .sponsor-us{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sponsor-title, .patron-title {
+        font-size: 30px;
+    }
+
+    .associate-sponsor-image {
+      width: 60%;
+    }
+
+    .sponsor-image {
+      width: 40%;
+    }
+
+    .sponsor-us-row{
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .sponsor-us-row{
+        font-size: 12px;
+    }
+}
