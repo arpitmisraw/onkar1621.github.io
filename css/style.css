@@ -1492,10 +1492,6 @@ button.navbar-toggler
     margin-top: -15px;
 }
 
-.shadowFix {
-    box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
-
-}
 
 .yellow
 {
@@ -1526,6 +1522,12 @@ button.navbar-toggler
     {
         overflow: hidden;
     }
+
+    .shadowFix {
+        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+    
+    }
+    
     
 }
 
