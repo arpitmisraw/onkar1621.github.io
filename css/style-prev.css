@@ -106,8 +106,8 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 992px){
    
     .navbar-list{
-        border-bottom:2px solid rgb(212, 212, 212); 
-        border-top:2px solid rgb(212, 212, 212); 
+        border-bottom:2px solid rgb(59, 59, 59); 
+        border-top:2px solid rgb(59, 59, 59); 
         padding-bottom: 4%;
         margin-top: 2%;
     }

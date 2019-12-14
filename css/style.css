@@ -1512,14 +1512,14 @@ body
 
 .white
 {
-    background-color: white !important;
-    opacity: 0.92;
+    background-color: black !important;
+    opacity: 0.95;
     
 }
 
 .black
 {
-    color: black !important;
+    color: white !important;
 }
 
 .top
@@ -1550,12 +1550,11 @@ body
     
     .c23
     {
-        background: #000000 !important;
+        background: rgba(0, 0, 0, 0.5) !important;
     }
-
-    .shadowFix {
-        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
-
+    .c23:hover
+    {
+        background: rgba(0, 0, 0, 1) !important;
     }
 
     #mainNav
@@ -1564,7 +1563,7 @@ body
     }
 
     .shadowFix {
-        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.3);
     
     }
     
