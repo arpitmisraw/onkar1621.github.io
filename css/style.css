@@ -260,7 +260,7 @@ body
 {
     width: 100%;
     background-color: #211B5C;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 }
 
@@ -505,7 +505,8 @@ body
 
 .commitment 
 {
-    padding-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .about
@@ -1594,7 +1595,7 @@ body
 
 .commitment 
 {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 }
 
