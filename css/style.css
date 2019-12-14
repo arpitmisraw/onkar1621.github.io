@@ -354,7 +354,7 @@ body
 .brochure-box
 {
     max-width: 80%;
-    background-color:#4D54EB;
+    background-color:#211B5C;
     height: 300px;
     margin: 0 auto;
     border-radius: 8px;
@@ -455,7 +455,7 @@ body
 .faq
 {
     position: relative;
-    background:  #4D54EB;
+    background:  #211B5C;
     padding-top: 80px;
 }
 
@@ -517,7 +517,7 @@ body
 }
 
 .collapsible {
-    background-color: #4D54EB;
+    background-color: #211B5C;
     color: white;
 }
 
@@ -1408,7 +1408,6 @@ body
     }
 
     .faq {
-        background: #4D54EB;
         padding-top: 80px;
         margin-top: -4px;
     }
@@ -1510,9 +1509,9 @@ body
 
     .collapsible:before {
          margin-top: 0px;
-        content: '\02795';
+        /* content: '\02795'; */
         font-size: 13px;
-        color: #715EFF;
+        color: #211B5C;
         float: left;
         margin-left: 0px;
         outline: 0;
@@ -1523,7 +1522,7 @@ body
     }
 
     .active:before {
-        content: "\2796"; /* Unicode character for "minus" sign (-) */
+        /* content: "\2796"; Unicode character for "minus" sign (-) */
         color: #ffd405;
     }
 
@@ -1571,7 +1570,7 @@ body
         padding-bottom: 2%;
         transition: all 0.8s ease;
     }
-
+    
     .c23
     {
         background: #000000 !important;
@@ -2147,7 +2146,7 @@ body
 
 
 .faq-dot{
-    color: #F9D53D;
+    color: #F79737;
 }
 
 #faq-question

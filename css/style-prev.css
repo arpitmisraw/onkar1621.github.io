@@ -69,7 +69,12 @@ button{
 } */
 
 .faq-collapsible{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgba(18, 14, 61, 0.5);
+    width: 100%;
+}
+
+.faq-top{
+    border-top: 2px solid rgba(18, 14, 61, 0.5);
     width: 100%;
 }
 
@@ -115,7 +120,7 @@ a, a:hover, a:after, a:visited, a:active{
 
 .collapsible:before {
     margin-top: 5px;
-    content: '\02795';
+    /* content: '\02795'; */
     font-size: 13px;
     color: #715EFF;
     float: left;
@@ -124,7 +129,7 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 .active:before {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    /* content: "\2796"; Unicode character for "minus" sign (-) */
     color: #ffd405;
 }
 
