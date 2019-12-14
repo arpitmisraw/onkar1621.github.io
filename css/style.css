@@ -1741,7 +1741,7 @@ body
     border-radius: 50%;
     opacity: 1.0;
     
-    offset-path: path('M0 0\
+    offset-path: path('M0 40\
           C20.5 80.5 18.5 161 205 226\
           M205 226\
           C336 274.5 396.356 169.5 359.5 116\
@@ -1777,7 +1777,7 @@ body
         border-radius: 50%;
         opacity: 1.0;
         
-        offset-path: path('M0 0\
+        offset-path: path('M0 40\
               C20.5 80.5 18.5 161 205 226\
               M205 226\
               C336 274.5 396.356 169.5 359.5 116\
@@ -2148,4 +2148,4 @@ body
         cursor: pointer;
         margin-top: 5px;
     }
-}
+}rgb(212, 212, 212)
