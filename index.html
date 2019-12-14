@@ -702,6 +702,7 @@
                 if(window.innerWidth > 992){
                   window.addEventListener("mousemove", (e) => {
                     var xPositionFromCenter = e.offsetX - halfWindowWidth;
+                    
                     var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
                     var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
                     var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
