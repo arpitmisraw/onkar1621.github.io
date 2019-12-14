@@ -1769,6 +1769,11 @@ body
 
   }
 
+  #devf img
+  {
+      width: 60%;
+  }
+
   
   .dashed{
     stroke-dasharray: 5;
@@ -2008,11 +2013,16 @@ body
     }
 
     .sponsor-image {
-      width: 40%;
+        width: 60%;
     }
 
     .sponsor-us-row{
         font-size: 14px;
+    }
+
+    #devf img
+    {
+        width: 100%;
     }
 
 }
