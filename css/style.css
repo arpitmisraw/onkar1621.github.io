@@ -142,19 +142,6 @@ body
     margin-right: 5px;
 }
 
-.dev
-{
-    background-color: white;
-    color: blue;
-    padding: 8px 32px 10px;
-    font-size: 1.8em;
-    /* border: none; */
-    border-radius: 24px;
-    border-color: white;
-    border-width: 1.8px;
-    font-weight: 400;
-}
-
 .about
 {
     background-color:#0C0C0C;
@@ -354,7 +341,7 @@ body
 .brochure-box
 {
     max-width: 80%;
-    background-color:#4D54EB;
+    background-color:#211B5C;
     height: 300px;
     margin: 0 auto;
     border-radius: 8px;
@@ -455,7 +442,7 @@ body
 .faq
 {
     position: relative;
-    background:  #4D54EB;
+    background:  #211B5C;
     padding-top: 80px;
 }
 
@@ -517,7 +504,7 @@ body
 }
 
 .collapsible {
-    background-color: #4D54EB;
+    background-color: #211B5C;
     color: white;
 }
 
@@ -1062,17 +1049,7 @@ body
         margin-bottom: 20px;
     }
 
-    .dev {
-        background-color: transparent;
-        color: white;
-        padding: 8px 32px 10px;
-        font-size: 1.4em;
-        /* border: none; */
-        border-radius: 24px;
-        border-color: white;
-        border-width: 1.8px;
-        font-weight: 500;
-    }
+
 
     #com-line {
         position: absolute;
@@ -1408,7 +1385,6 @@ body
     }
 
     .faq {
-        background: #4D54EB;
         padding-top: 80px;
         margin-top: -4px;
     }
@@ -1510,9 +1486,9 @@ body
 
     .collapsible:before {
          margin-top: 0px;
-        content: '\02795';
+        /* content: '\02795'; */
         font-size: 13px;
-        color: #715EFF;
+        color: #211B5C;
         float: left;
         margin-left: 0px;
         outline: 0;
@@ -1523,7 +1499,7 @@ body
     }
 
     .active:before {
-        content: "\2796"; /* Unicode character for "minus" sign (-) */
+        /* content: "\2796"; Unicode character for "minus" sign (-) */
         color: #ffd405;
     }
 
@@ -1536,14 +1512,14 @@ body
 
 .white
 {
-    background-color: white !important;
-    opacity: 0.92;
+    background-color: black !important;
+    opacity: 0.95;
     
 }
 
 .black
 {
-    color: black !important;
+    color: white !important;
 }
 
 .top
@@ -1571,15 +1547,14 @@ body
         padding-bottom: 2%;
         transition: all 0.8s ease;
     }
-
+    
     .c23
     {
-        background: #000000 !important;
+        background: rgba(0, 0, 0, 0.5) !important;
     }
-
-    .shadowFix {
-        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
-
+    .c23:hover
+    {
+        background: rgba(0, 0, 0, 1) !important;
     }
 
     #mainNav
@@ -1588,7 +1563,7 @@ body
     }
 
     .shadowFix {
-        box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
+        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.3);
     
     }
     
@@ -1654,21 +1629,6 @@ body
     position: absolute;
     opacity: 0.5;  
   }
-
-  .dev {
-    align-items: center;
-    background-color: transparent;
-    color: white;
-    padding: 8px 32px 10px;
-    font-size: 1.4em;
-    /* border: none; */
-    border-radius: 24px;
-    border-color: white;
-    border-width: 1.8px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 
   @media screen and (max-width:1300px)
   {
@@ -1753,22 +1713,6 @@ body
         width: 85%;
     }
 
-    .dev {
-        align-items: center;
-        background-color: #e1dfdf;
-        color: #4e6ddf;
-        padding: 8px 32px 10px;
-        font-size: 1.4em;
-        /* border: none; */
-        border-radius: 24px;
-        border-color: #ffffff;
-        border-width: 1.8px;
-        font-weight: 500;
-        cursor: pointer;
-        margin-top: 5px;
-    }
-
-
   }
 
   
@@ -1797,7 +1741,7 @@ body
     border-radius: 50%;
     opacity: 1.0;
     
-    offset-path: path('M0 0\
+    offset-path: path('M0 40\
           C20.5 80.5 18.5 161 205 226\
           M205 226\
           C336 274.5 396.356 169.5 359.5 116\
@@ -1833,7 +1777,7 @@ body
         border-radius: 50%;
         opacity: 1.0;
         
-        offset-path: path('M0 0\
+        offset-path: path('M0 40\
               C20.5 80.5 18.5 161 205 226\
               M205 226\
               C336 274.5 396.356 169.5 359.5 116\
@@ -2147,7 +2091,7 @@ body
 
 
 .faq-dot{
-    color: #F9D53D;
+    color: #F79737;
 }
 
 #faq-question
@@ -2158,3 +2102,50 @@ body
 #more-info {
     text-align: left;
 }
+
+
+
+.dev {
+    font-family: "CeraPro";
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    padding: 8px 32px 10px;
+    font-size: 1.4em;
+    /* border: none; */
+    border-radius: 24px;
+    border-color: rgba(255,255,255,1);
+    border-width: 1.5px;
+    border-style: solid;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px)
+{
+    .dev {
+        align-items: center;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-width: 1.8px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 440px)
+{
+    .dev {
+        align-items: center;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+}rgb(212, 212, 212)
