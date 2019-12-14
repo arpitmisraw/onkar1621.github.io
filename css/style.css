@@ -1824,6 +1824,33 @@ body
     }
   }
 
+  @-moz-document url-prefix() { 
+    .ball {
+        display:none;
+        width: 10px;
+        height: 10px;
+        background-color: #F9D53D;
+        border-radius: 50%;
+        opacity: 1.0;
+        
+        offset-path: path('M0 0\
+              C20.5 80.5 18.5 161 205 226\
+              M205 226\
+              C336 274.5 396.356 169.5 359.5 116\
+              C326.089 67.5 205 74.4 205 226\
+              ZM205 226\
+              C208.667 288.333 251.7 408.2 394.5 389');
+    
+    
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      /*   offset-distance: 0%; */
+      
+      /*   animation: red-ball 5s linear alternate infinite; */
+      }
+} 
+
   /* @keyframes red-ball {
     from {
       offset-distance: 0%;
