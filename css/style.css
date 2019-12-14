@@ -142,19 +142,6 @@ body
     margin-right: 5px;
 }
 
-.dev
-{
-    background-color: white;
-    color: blue;
-    padding: 8px 32px 10px;
-    font-size: 1.8em;
-    /* border: none; */
-    border-radius: 24px;
-    border-color: white;
-    border-width: 1.8px;
-    font-weight: 400;
-}
-
 .about
 {
     background-color:#0C0C0C;
@@ -1062,17 +1049,7 @@ body
         margin-bottom: 20px;
     }
 
-    .dev {
-        background-color: transparent;
-        color: white;
-        padding: 8px 32px 10px;
-        font-size: 1.4em;
-        /* border: none; */
-        border-radius: 24px;
-        border-color: white;
-        border-width: 1.8px;
-        font-weight: 500;
-    }
+
 
     #com-line {
         position: absolute;
@@ -1654,21 +1631,6 @@ body
     opacity: 0.5;  
   }
 
-  .dev {
-    align-items: center;
-    background-color: transparent;
-    color: white;
-    padding: 8px 32px 10px;
-    font-size: 1.4em;
-    /* border: none; */
-    border-radius: 24px;
-    border-color: white;
-    border-width: 1.8px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-
   @media screen and (max-width:1300px)
   {
     .main-landing-text {
@@ -1751,22 +1713,6 @@ body
         margin-bottom: 15px;
         width: 85%;
     }
-
-    .dev {
-        align-items: center;
-        background-color: #e1dfdf;
-        color: #4e6ddf;
-        padding: 8px 32px 10px;
-        font-size: 1.4em;
-        /* border: none; */
-        border-radius: 24px;
-        border-color: #ffffff;
-        border-width: 1.8px;
-        font-weight: 500;
-        cursor: pointer;
-        margin-top: 5px;
-    }
-
 
   }
 
@@ -2156,4 +2102,51 @@ body
 
 #more-info {
     text-align: left;
+}
+
+
+
+.dev {
+    font-family: "CeraPro";
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    padding: 8px 32px 10px;
+    font-size: 1.4em;
+    /* border: none; */
+    border-radius: 24px;
+    border-color: rgba(255,255,255,1);
+    border-width: 1.5px;
+    border-style: solid;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px)
+{
+    .dev {
+        align-items: center;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-width: 1.8px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 440px)
+{
+    .dev {
+        align-items: center;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 5px;
+    }
 }
