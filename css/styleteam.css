@@ -206,9 +206,9 @@ background-color: #555;
 #mainNav {
     /* padding-right: 60px; */
     padding-top: 30px;
-    
 
-    
+
+
 
     background: #0c0c0c !important;
 }
@@ -247,7 +247,7 @@ background-color: #555;
         width: 100%;
     }
 
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -1075,7 +1075,7 @@ background-color: #555;
     position: absolute;
     text-align: center;
     padding: 0.25rem 2%;
-    
+
     /*border: 0px yellow;*/
     background: #FFBE2E;
     line-height: 105%;
@@ -1094,8 +1094,8 @@ background-color: #555;
     /* transform: translate(-50%, 0); */
 }
 
-@media screen and (min-width: 1400px){
-    .circle-holder .container{
+@media screen and (min-width: 1400px) {
+    .circle-holder .container {
         left: 20%;
     }
 }
@@ -1141,6 +1141,10 @@ background-color: #555;
 
     .speaker-name {
         font-size: 22px;
+    }
+
+    .cust {
+        font-size: 19px;
     }
 
     .speaker-about {
@@ -2011,9 +2015,8 @@ background-color: #555;
 }
 
 
-.about-team
-{
-    background-color:#0C0C0C;
+.about-team {
+    background-color: #0C0C0C;
     width: 100%;
     height: 40vh;
     padding-top: 21%;
@@ -2025,15 +2028,16 @@ background-color: #555;
 
 @media screen and (max-width: 768px) {
     .about-team {
+        margin-top:15% ;
         padding-top: 48%;
         padding-bottom: 12%
     }
 }
 
 .container {
-    
-     position: relative; 
-     /* transform: translate(+25%, 0);  */
+
+    position: relative;
+    /* transform: translate(+25%, 0);  */
 }
 
 
