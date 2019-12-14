@@ -335,7 +335,7 @@ body
     max-width: 100%;
     position: relative;
     border-radius: 17px;
-    transform: translate(0%, -72%);
+    transform: translate(0%, -65%);
 }
 
 #brochure
@@ -635,7 +635,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -87.5%);
+        transform: translate(0%, -72%);
     }
 
     .brochure-box {
@@ -710,7 +710,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -93%);
+        transform: translate(0%, -82%);
     }
 
     .brochure-box {
@@ -819,7 +819,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -100%);
+        transform: translate(0%, -90%);
     }
 
     .brochure-box {
@@ -886,7 +886,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -105%);
+        transform: translate(0%, -98%);
     }
 
     .brochure-box {
@@ -917,7 +917,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -110%);
+        transform: translate(0%, -102%);
     }
 
     /* #square img {
@@ -1101,7 +1101,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -125%);
+        transform: translate(0%, -112%);
     }
 
     #content div h1 {
@@ -1187,7 +1187,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -136%);
+        transform: translate(0%, -122%);
     }
 
     /* #line img {
@@ -1282,7 +1282,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -150%);
+        transform: translate(0%, -135%);
     }
 
     .brochure-box {
