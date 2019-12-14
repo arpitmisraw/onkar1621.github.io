@@ -215,7 +215,7 @@ body
 #content
 {
     position: relative;
-    top:50%;
+    top:40%;
     left:50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -499,12 +499,11 @@ body
     padding-right: 4%;
 }
 
-#lady p
-{
-    max-width: 50%;
+#lady p {
+    max-width: 70%;
     margin: 0 auto;
     font-size: 1.8em;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .commitment 
@@ -533,8 +532,7 @@ body
     margin-left: 15%;
 }
 
-.bottom-curve img
-{
+.bottom-curve img {
     width: 100%;
     margin-top: -15px;
 }
@@ -554,6 +552,12 @@ body
     .col-md-7 {
         margin-top: 60px;
         margin-bottom: 100px;
+    }
+
+    #faq-sec
+    {
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -858,6 +862,12 @@ body
         height: 75%;
     }
 
+    .bottom-curve img {
+        width: 102%;
+        margin-top: -15px;
+    }
+    
+
 }
 
 @media screen and (max-width:850px)
@@ -1023,12 +1033,12 @@ body
         text-align: center;
     }
 
-    .later p
-    {
+    .later p {
         max-width: 80%;
         margin: 0 auto;
         font-size: 1.6em;
         padding-top: 50px;
+        margin-bottom: 30px;
     }
 
     #logo {
@@ -1598,19 +1608,15 @@ body
     transform: translate(-50%, -50%);
     width: 30%;
 }
-
-
-
-
 .hint{
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-45%, 0);
     margin-bottom: 15px;
 }
 
 .landing-college-name-row{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 500;
     font-family: 'CeraPro';
 }
@@ -1649,8 +1655,121 @@ body
     opacity: 0.5;  
   }
 
+  .dev {
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 8px 32px 10px;
+    font-size: 1.4em;
+    /* border: none; */
+    border-radius: 24px;
+    border-color: white;
+    border-width: 1.8px;
+    font-weight: 500;
+    cursor: pointer;
+}
 
+
+  @media screen and (max-width:1300px)
+  {
+    .main-landing-text {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+    }
+
+    .landing-college-name-row
+    {
+        font-size: 1.5em;
+    }
+
+  }
+
+  @media screen and (max-width: 992px)
+  {
+    .main-landing-text {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+
+    .landing-college-name-row
+    {
+        font-size: 1.7em;
+    }
+  }
+
+  @media screen and (max-width: 768px)
+  {
+    .main-landing-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+
+    .landing-college-name-row
+    {
+        font-size: 1.6em;
+    }
+  }
   
+  @media screen and (max-width: 650px)
+  {
+    .main-landing-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+    }
+  }
+
+  @media screen and (max-width: 440px)
+  {
+    .main-landing-text {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .landing-college-name-row
+    {
+        font-size: 1.4em;
+    }
+
+    .hint {
+        position: relative;
+        left: 50%;
+        transform: translate(-45%, 0);
+        margin-bottom: 15px;
+        width: 85%;
+    }
+
+    .dev {
+        align-items: center;
+        background-color: #e1dfdf;
+        color: #4e6ddf;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-color: #ffffff;
+        border-width: 1.8px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+
+  }
 
   
   .dashed{
@@ -1944,19 +2063,7 @@ body
   }
 
 
-.dev {
-    align-items: center;
-    background-color: transparent;
-    color: white;
-    padding: 8px 32px 10px;
-    font-size: 1.4em;
-    /* border: none; */
-    border-radius: 24px;
-    border-color: white;
-    border-width: 1.8px;
-    font-weight: 500;
-    cursor: pointer;
-}
+
 
 .devfolio {
     align-items: center;
