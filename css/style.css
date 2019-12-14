@@ -84,7 +84,7 @@ body
 }
 
 #front, #mid, #back{
-    transition: margin-left 1s ease;
+    transition: margin-left 0.5s ease-in-out;
 }
 
 
