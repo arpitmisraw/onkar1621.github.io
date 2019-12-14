@@ -259,7 +259,7 @@ body
 .commitment
 {
     width: 100%;
-    background-color: #F79737;
+    background-color: #211B5C;
     height: 100vh;
     position: relative;
 }
@@ -2103,3 +2103,14 @@ body
  #com-line{
      animation: wiggle 2s ease;
  }
+
+
+.footer-wheel-img{
+    position: absolute;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    /* left: 10%;
+    width: 5%;
+    top: 10%;
+    transform: translate(-50%, -50%); */
+}
