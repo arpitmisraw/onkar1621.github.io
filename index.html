@@ -80,8 +80,8 @@
     <div class="container-fluid" style="padding-right:0; padding-left:0%;">
       <!-- <a class="navbar-brand js-scroll-trigger navbar-title" href="#"><img src="images/Text-Logo.png" class="navbar-img"></a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      aria-expanded="false" aria-label="Toggle navigation" style="padding: 0px 0px; margin: 0px 0px; border: none;">
+	<img style="width:60px; padding: 0px 0px; margin: 0px 0px; " src="images/nav.svg">
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto navbar-list">
@@ -601,42 +601,47 @@
                 </div>
               </div>
 
-              <div class="footer" id="contact">
-                <div class="row footer-row">
-                  <div class="col-12">
-                    <a href="#" class="footer-title"><img src="images/Landing/logo_coloured_white_text.svg" class="footer-logo-img"></a>
-                  </div>
-                </div>
-
-                <div class="row footer-row footer-info">
-                  <div class="col-12">
-                    <a href="mailto:hackinthenorth@iiita.ac.in" target="_top" style="color: white">hackinthenorth@iiita.ac.in</a>
-                  </div>
-
-                  <div class="col-12">
-                    <a href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0" target="_blank"  style="color: white">Code of Conduct</a>
-                  </div>
-
-                  <div class="col-12" style="color: white">
-                    Copyright © 2020 Hack In The North
-                  </div>
-                </div>
-
-                <div class="row footer-row justify-content-around footer-social-links">
-                  <div class="col-sm-4 col-12">
-                    <a href="https://www.facebook.com/HackInTheNorth/" target="_blank"  style="color: white">Facebook</a>
-                  </div>
-
-                  <div class="col-sm-4 col-12">
-                    <a href="https://twitter.com/hintiiita" target="_blank"  style="color: white">Twitter</a>
-                  </div>
-
-                  <div class="col-sm-4 col-12">
-                    <a href="https://www.instagram.com/hackinthenorth/" target="_blank"  style="color: white">Instagram</a>
-      </div>
-    </div>
-
+              <div class="footer-outer">
+                  <img src="./images/Footer/Vector.svg" alt="" class="footer-wheel-img">
+                  <div class="footer" id="contact">
+                      
+                      <div class="row footer-row">
+                        <div class="col-12">
+                          <a href="#" class="footer-title"><img src="images/Landing/logo_coloured_white_text.svg" class="footer-logo-img"></a>
+                        </div>
+                      </div>
+      
+                      <div class="row footer-row footer-info">
+                        <div class="col-12">
+                          <a href="mailto:hackinthenorth@iiita.ac.in" target="_top" style="color: white">hackinthenorth@iiita.ac.in</a>
+                        </div>
+      
+                        <div class="col-12">
+                          <a href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0" target="_blank"  style="color: white">Code of Conduct</a>
+                        </div>
+      
+                        <div class="col-12" style="color: white">
+                          Copyright © 2020 Hack In The North
+                        </div>
+                      </div>
+      
+                      <div class="row footer-row justify-content-around footer-social-links">
+                        <div class="col-sm-4 col-12">
+                          <a href="https://www.facebook.com/HackInTheNorth/" target="_blank"  style="color: white">Facebook</a>
+                        </div>
+      
+                        <div class="col-sm-4 col-12">
+                          <a href="https://twitter.com/hintiiita" target="_blank"  style="color: white">Twitter</a>
+                        </div>
+      
+                        <div class="col-sm-4 col-12">
+                          <a href="https://www.instagram.com/hackinthenorth/" target="_blank"  style="color: white">Instagram</a>
+            </div>
+          </div>
+      
+                    </div>
               </div>
+              
 
               <script>
                 var path = document.querySelector('.path');
@@ -688,38 +693,34 @@
                 });
               </script>
 
-              <!-- <script>
+              <script>
                 var landing = document.querySelector('.landing');
                 var halfWindowWidth = Math.ceil(window.innerWidth / 2);
                 var m1 = document.querySelector('#front');
                 var m2 = document.querySelector('#mid');
                 var m3 = document.querySelector('#back');
-                window.addEventListener("mousemove", (e) => {
+                if(window.innerWidth > 992){
+                  window.addEventListener("mousemove", (e) => {
                     var xPositionFromCenter = e.offsetX - halfWindowWidth;
-                    if(window.innerWidth > 1000){
-                      var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
-                      var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
-                      var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
-                      m1.style.marginLeft = -degreeChange1 + 'px';
-                      m2.style.marginLeft = degreeChange2 + 'px';
-                      m3.style.marginLeft = degreeChange3 + 'px';
-                    }
-                    else{
-                      m1.style.marginLeft = '0px';
-                      m2.style.marginLeft = '0px';
-                      m3.style.marginLeft = '0px';
-                    }
-                });
-        
-                document.addEventListener("scroll", () => {
-                    var yPositionOfScroll = window.scrollY;
-                    var totalHeight = window.innerHeight;
-                    var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
-                    var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
-                    m2.style.marginBottom = -degreeChange2 + 'px';
-                    m3.style.marginBottom = -degreeChange3 + 'px';
-                });
-              </script> -->
+                    var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
+                    var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
+                    var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    m1.style.marginLeft = -degreeChange1 + 'px';
+                    m2.style.marginLeft = degreeChange2 + 'px';
+                    m3.style.marginLeft = degreeChange3 + 'px';
+                  });
+          
+                  document.addEventListener("scroll", () => {
+                      var yPositionOfScroll = window.scrollY;
+                      var totalHeight = window.innerHeight;
+                      var degreeChange2 = Math.floor(yPositionOfScroll * 50 / totalHeight);
+                      var degreeChange3 = Math.floor(yPositionOfScroll * 100 / totalHeight);
+                      m2.style.marginBottom = -degreeChange2 + 'px';
+                      m3.style.marginBottom = -degreeChange3 + 'px';
+                  });
+                }
+                
+              </script>
               
               <script>
                 $(".navbar-toggler").click(function(){
