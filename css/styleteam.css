@@ -216,7 +216,6 @@ background-color: #555;
 .team {
     height: 100vh;
     width: 100vw;
-
 }
 
 
@@ -990,8 +989,8 @@ background-color: #555;
     background: linear-gradient(136.09deg, rgba(255, 106, 72, 0.56) 18.06%, rgba(247, 151, 55, 0.56) 87.74%), url(image.png);
     background-blend-mode: darken, normal;
     /* border:4px solid #FFFFFF; */
-    width: 160px;
-    height: 200px;
+    width: 165px;
+    height: 220px;
     box-shadow: 0px 4px 4px rgba(35, 35, 35, 0.25);
     /* -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
@@ -1045,7 +1044,7 @@ background-color: #555;
 
     font-family: CeraPro;
     padding: 1px 1px;
-    margin: 0px 0px;
+    margin: 10px 1px;
 }
 
 .speaker-company {
@@ -1060,7 +1059,7 @@ background-color: #555;
 
     background: #FFFFFF;
 
-    bottom: 4%;
+    bottom: 0%;
     padding: 0.25rem 2%;
 
     height: 22px;
@@ -1071,18 +1070,18 @@ background-color: #555;
     -webkit-text-fill-color: #FFFFFF;
     font-weight: 500px;
     font-style: normal;
-    font-size: 22px;
+    font-size: 18px;
     position: absolute;
     text-align: center;
     padding: 0.25rem 2%;
-    margin: 0 0;
-    border: 0px yellow;
+    
+    /*border: 0px yellow;*/
     background: #FFBE2E;
-    line-height: 110%;
+    line-height: 105%;
     /* left: 22.3%; */
     height: 32px;
-    bottom: 18%;
-
+    bottom: 15%;
+    margin: 10px 1px;
 }
 
 .circle-holder .container {
@@ -1095,7 +1094,7 @@ background-color: #555;
     color: #393939;
     position: absolute;
     text-align: center;
-    margin: 0 0;
+    margin: 10px 1px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1103,7 +1102,7 @@ background-color: #555;
 
     background: #FFFFFF;
 
-    bottom: 11%;
+    bottom: 6%;
     padding: 0.25rem 2%;
 
     height: 22px;
@@ -2023,7 +2022,8 @@ background-color: #555;
 .container {
     
      position: relative; 
-     transform: translate(+20%, 0); 
+     transform: translate(+25%, 0); 
 }
+
 
 /*--------- Projects Section ends  -----------*/
