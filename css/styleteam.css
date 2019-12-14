@@ -997,9 +997,10 @@ background-color: #555;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16); */
     margin-bottom: 30px;
     margin-top: 30px;
-    /* position: relative; */
-    /* left: 50%; */
-    /* transform: translate(-50%, 0); */
+
+    /* position: relative; 
+    left: 50%;
+    transform: translate(-50%, 0); */
 }
 
 .team-image {
@@ -1084,11 +1085,21 @@ background-color: #555;
     margin: 10px 1px;
 }
 
+
+
 .circle-holder .container {
-    width: 245px;
+    width: 165px;
     margin: 0 auto;
     padding: 0 !important;
+    /* transform: translate(-50%, 0); */
 }
+
+@media screen and (min-width: 1400px){
+    .circle-holder .container{
+        left: 20%;
+    }
+}
+
 
 .speaker-about {
     color: #393939;
@@ -2022,7 +2033,7 @@ background-color: #555;
 .container {
     
      position: relative; 
-     transform: translate(+25%, 0); 
+     /* transform: translate(+25%, 0);  */
 }
 
 
