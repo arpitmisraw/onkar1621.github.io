@@ -84,7 +84,7 @@ body
 }
 
 #front, #mid, #back{
-    transition: margin-left 1s ease;
+    transition: margin-left 0.5s ease-in-out;
 }
 
 
@@ -1773,7 +1773,7 @@ body
 
   
   .dashed{
-    stroke-dasharray: 5;
+    stroke-dasharray: 10;
   }
   /* .path {
     stroke-dasharray: 1114.6513671875;
