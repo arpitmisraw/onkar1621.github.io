@@ -2045,14 +2045,19 @@ a, a:hover, a:after, a:visited, a:active{
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(-50%, -87%);
+        transform: translate(-0%, -87%);
     }
 
     #brochure {
         height: 70vh;
     }
+
+    #more-info {
+        text-align: center;
+    }
   }
 
+ 
 
 
 
@@ -2127,6 +2132,13 @@ a, a:hover, a:after, a:visited, a:active{
 
 #more-info {
     text-align: left;
+}
+
+@media screen and (min-width: 440px) and (max-width: 737px) and (orientation: landscape)
+{
+  #more-info {
+      text-align: center;
+  }
 }
 
 
