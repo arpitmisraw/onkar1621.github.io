@@ -1725,6 +1725,11 @@ a, a:hover, a:after, a:visited, a:active{
       width: 60%;
   }
 
+  #devf img
+  {
+      width: 60%;
+  }
+
   
   .dashed{
     stroke-dasharray: 10;
