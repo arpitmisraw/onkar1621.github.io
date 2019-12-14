@@ -335,7 +335,9 @@ body
     max-width: 100%;
     position: relative;
     border-radius: 17px;
-    transform: translate(0%, -72%);
+    left: 50%;
+    transform: translate(-50%, -72%);
+
 }
 
 #brochure
@@ -442,7 +444,7 @@ body
 
 .up-curve img {
     width: 102%;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
 
 .up-curve
@@ -635,7 +637,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -87.5%);
+        transform: translate(-50%, -87.5%);
     }
 
     .brochure-box {
@@ -710,7 +712,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -93%);
+        transform: translate(-50%, -93%);
     }
 
     .brochure-box {
@@ -819,7 +821,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -100%);
+        transform: translate(-50%, -100%);
     }
 
     .brochure-box {
@@ -886,7 +888,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -105%);
+        transform: translate(-50%, -105%);
     }
 
     .brochure-box {
@@ -917,7 +919,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -110%);
+        transform: translate(-50%, -110%);
     }
 
     /* #square img {
@@ -1101,7 +1103,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -125%);
+        transform: translate(-50%, -125%);
     }
 
     #content div h1 {
@@ -1187,7 +1189,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -136%);
+        transform: translate(-50%, -136%);
     }
 
     /* #line img {
@@ -1282,7 +1284,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -150%);
+        transform: translate(-50%, -150%);
     }
 
     .brochure-box {
@@ -1367,7 +1369,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -135%);
+        transform: translate(-50%, -135%);
     }
 
     .brochure-box {
@@ -1557,7 +1559,7 @@ body
 
 .yellow
 {
-    color:yellow;
+    color:#F9D53D;
 }
 
 @media screen and (min-width: 992px)
@@ -2052,7 +2054,7 @@ body
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -87%);
+        transform: translate(-50%, -87%);
     }
 
     #brochure {
@@ -2114,4 +2116,18 @@ body
     width: 5%;
     top: 10%;
     transform: translate(-50%, -50%); */
+}
+
+
+.faq-dot{
+    color: #F9D53D;
+}
+
+#faq-question
+{
+    font-family: 'CeraPro-Bold';
+}
+
+#more-info {
+    text-align: left;
 }
