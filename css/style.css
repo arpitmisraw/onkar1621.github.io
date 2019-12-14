@@ -12,6 +12,11 @@ body
    
 }
 
+a, a:hover, a:after, a:visited, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 @font-face{
     font-family: 'CeraPro';
     src: url('../fonts/cera pro sv/Cera\ Pro\ Medium.otf') format('opentype');
@@ -443,7 +448,8 @@ body
 {
     position: relative;
     background:  #211B5C;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .faq-head {
@@ -457,6 +463,7 @@ body
     top: -80px;
     right: 50px;
     height: 120%;
+    animation: wiggle 2s infinite;
 }
 
 .faq-head h1
@@ -1579,7 +1586,7 @@ body
 .main-landing-text{
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 40%;
     transform: translate(-50%, -50%);
     width: 30%;
 }
@@ -2062,20 +2069,20 @@ body
     100% { transform: skewX(9deg); } */
 
     0% { transform: skewX(9deg); }
-            10% { transform: skewX(-8deg); }
-            20% { transform: skewX(7deg); }
-            30% { transform: skewX(-6deg); }
-            40% { transform: skewX(5deg); }
-            50% { transform: skewX(-4deg); }
-            60% { transform: skewX(3deg); }
-            70% { transform: skewX(-2deg); }
-            80% { transform: skewX(1deg); }
-            90% { transform: skewX(0deg); }
-            100% { transform: skewX(0deg); }
+            5% { transform: skewX(-8deg); }
+            10% { transform: skewX(7deg); }
+            15% { transform: skewX(-6deg); }
+            20% { transform: skewX(5deg); }
+            25% { transform: skewX(-4deg); }
+            30% { transform: skewX(3deg); }
+            35% { transform: skewX(-2deg); }
+            40% { transform: skewX(1deg); }
+            45% { transform: skewX(0deg); }
+            50% { transform: skewX(0deg); }
  }
 
  #com-line{
-     animation: wiggle 2s ease;
+     animation: wiggle 2s infinite;
  }
 
 
@@ -2087,6 +2094,12 @@ body
     width: 5%;
     top: 10%;
     transform: translate(-50%, -50%); */
+}
+
+@media screen and (max-width: 992px){
+    .footer-wheel-img{
+        width: 10%;
+    }
 }
 
 
@@ -2148,4 +2161,5 @@ body
         cursor: pointer;
         margin-top: 5px;
     }
-}rgb(212, 212, 212)
+}
+
