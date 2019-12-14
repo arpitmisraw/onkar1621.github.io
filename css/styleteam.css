@@ -193,7 +193,6 @@ background-color: #555;
     .pointer-svg{
         width: 5%;
     }
-
     .calendar-svg{
         width: 6%;
     }
@@ -217,7 +216,6 @@ background-color: #555;
 .team {
     height: 100vh;
     width: 100vw;
-
 }
 
 
@@ -348,8 +346,8 @@ background-color: #555;
 
 
 .about {
-    padding-top: 15% !important;
-    /* padding-bottom: 10%; */
+    padding-top: 15%;
+    padding-bottom: 10%;
 }
 
 .faq {
@@ -482,17 +480,14 @@ background-color: #555;
     .landing-page{
         margin-top: 5%;
     }
-
     .landing-contents{
         width: 40%;
     }
-
     .landing-nav-btn{
         font-size: 8px;
         width: 50%;
         margin-top: 10px;
     }
-
     .landing-info{
         font-size: 10px;
         color: gray;
@@ -950,6 +945,8 @@ background-color: #555;
 .team {
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .team-title {
@@ -986,14 +983,14 @@ background-color: #555;
     margin-top: 30px;
     background-size: 170%;
     background-position: center;
-    border-radius: 40px;
-    border-bottom-left-radius: 77px;
+    border-radius: 35px;
+    border-bottom-left-radius: 7px;
 
     background: linear-gradient(136.09deg, rgba(255, 106, 72, 0.56) 18.06%, rgba(247, 151, 55, 0.56) 87.74%), url(image.png);
     background-blend-mode: darken, normal;
     /* border:4px solid #FFFFFF; */
-    width: 245px;
-    height: 300px;
+    width: 165px;
+    height: 220px;
     box-shadow: 0px 4px 4px rgba(35, 35, 35, 0.25);
     /* -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
@@ -1015,8 +1012,8 @@ background-color: #555;
     ;
 }
 
-.row.speaker-row {
-    margin-left: 8.5%;
+.speaker-row {
+    margin-left: 6%;
     margin-right: 0%;
     /* padding-left: 5%; */
     /* padding-left: 8%;  
@@ -1029,7 +1026,6 @@ background-color: #555;
 .circle-holder {
     margin: 0px 0px;
     padding: 0px 0px;
-
 }
 
 .speaker-title {
@@ -1048,7 +1044,7 @@ background-color: #555;
 
     font-family: CeraPro;
     padding: 1px 1px;
-    margin: 0px 0px;
+    margin: 10px 1px;
 }
 
 .speaker-company {
@@ -1063,7 +1059,7 @@ background-color: #555;
 
     background: #FFFFFF;
 
-    bottom: 4%;
+    bottom: 0%;
     padding: 0.25rem 2%;
 
     height: 22px;
@@ -1074,18 +1070,18 @@ background-color: #555;
     -webkit-text-fill-color: #FFFFFF;
     font-weight: 500px;
     font-style: normal;
-    font-size: 22px;
+    font-size: 18px;
     position: absolute;
     text-align: center;
     padding: 0.25rem 2%;
-    margin: 0 0;
-    border: 0px yellow;
+    
+    /*border: 0px yellow;*/
     background: #FFBE2E;
-    line-height: 110%;
+    line-height: 105%;
     /* left: 22.3%; */
     height: 32px;
-    bottom: 18%;
-
+    bottom: 15%;
+    margin: 10px 1px;
 }
 
 .circle-holder .container {
@@ -1098,7 +1094,7 @@ background-color: #555;
     color: #393939;
     position: absolute;
     text-align: center;
-    margin: 0 0;
+    margin: 10px 1px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1106,7 +1102,7 @@ background-color: #555;
 
     background: #FFFFFF;
 
-    bottom: 11%;
+    bottom: 6%;
     padding: 0.25rem 2%;
 
     height: 22px;
@@ -1152,7 +1148,6 @@ background-color: #555;
     /* 1 Pic */
     /* .speaker-row {
         margin-left: 5%;
-
     } */
 
     /* 2 Pics */
@@ -2002,6 +1997,32 @@ background-color: #555;
 
 .shadowFix {
     box-shadow: 0 6px 18px 0 rgba(46, 61, 73, 0.1);
+}
+
+
+.about-team
+{
+    background-color:#0C0C0C;
+    width: 100%;
+    height: 40vh;
+    padding-top: 21%;
+    padding-bottom: 3%;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .about-team {
+        padding-top: 48%;
+        padding-bottom: 12%
+    }
+}
+
+.container {
+    
+     position: relative; 
+     transform: translate(+25%, 0); 
 }
 
 
