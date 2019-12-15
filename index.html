@@ -702,9 +702,19 @@
                   window.addEventListener("mousemove", (e) => {
                     var xPositionFromCenter = e.offsetX - halfWindowWidth;
                     
-                    var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
-                    var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
-                    var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    // var degreeChange1 = Math.floor(xPositionFromCenter * 50 / halfWindowWidth);
+                    // var degreeChange2 = Math.floor(xPositionFromCenter * 30 / halfWindowWidth);
+                    // var degreeChange3 = Math.floor(xPositionFromCenter * 20 / halfWindowWidth);
+                    if(xPositionFromCenter > 0){
+                      degreeChange1 = 50;
+                      degreeChange2 = 30;
+                      degreeChange3 = 20;
+                    }
+                    else{
+                      degreeChange1 = -50;
+                      degreeChange2 = -30;
+                      degreeChange3 = -20;
+                    }
                     m1.style.marginLeft = -degreeChange1 + 'px';
                     m2.style.marginLeft = degreeChange2 + 'px';
                     m3.style.marginLeft = degreeChange3 + 'px';
